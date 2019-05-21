@@ -22,6 +22,7 @@
 
 const fileType = require('file-type')
 const readExif = require('piexifjs')
+const { setExifTags } = require('./helper')
 
 /* File formats that contain exif informations */
 const exifFileTypes = [
@@ -54,7 +55,7 @@ function photoif(fileAsString) {
 
   // get exif data if type is one of possible image
   if (exifFileTypes.includes(pif.type.mime)) {
-    pif.exif = readExif.load(fileAsString.toString('binary'))
+    pif.exif = setExifTags(readExif.load(fileAsString.toString('binary')))
   }
 
   // get p
