@@ -1,0 +1,4862 @@
+[
+ {
+   "Tag ID": "0x0001",
+   "Tag Name": "InteropIndex",
+   "Writable": "string!",
+   "Group": "InteropIFD",
+   "Values / Notes": "'R03' = R03 - DCF option file (Adobe RGB)   \n'R98' = R98 - DCF basic file (sRGB)   \n'THM' = THM - DCF thumbnail file",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0002",
+   "Tag Name": "InteropVersion",
+   "Writable": "undef!:",
+   "Group": "InteropIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x000b",
+   "Tag Name": "ProcessingSoftware",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "(used by ACD Systems Digital Imaging)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x00fe",
+   "Tag Name": "SubfileType",
+   "Writable": "int32u!",
+   "Group": "IFD0",
+   "Values / Notes": "(called NewSubfileType by the TIFF specification)   \n0x0 = Full-resolution Image   \n0x1 = Reduced-resolution image   \n0x2 = Single page of multi-page image   \n0x3 = Single page of multi-page reduced-resolution image   \n0x4 = Transparency mask   \n0x5 = Transparency mask of reduced-resolution image   \n0x6 = Transparency mask of multi-page image   \n0x7 = Transparency mask of reduced-resolution multi-page image   \n0x10001 = Alternate reduced-resolution image   \n0xffffffff = invalid   \nBit 0 = Reduced resolution   \nBit 1 = Single page   \nBit 2 = Transparency mask   \nBit 3 = TIFF/IT final page   \nBit 4 = TIFF-FX mixed raster content",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x00ff",
+   "Tag Name": "OldSubfileType",
+   "Writable": "int16u!",
+   "Group": "IFD0",
+   "Values / Notes": "(called SubfileType by the TIFF specification)   \n1 = Full-resolution image   \n2 = Reduced-resolution image   \n3 = Single page of multi-page image",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0100",
+   "Tag Name": "ImageWidth",
+   "Writable": "int32u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0101",
+   "Tag Name": "ImageHeight",
+   "Writable": "int32u!",
+   "Group": "IFD0",
+   "Values / Notes": "(called ImageLength by the EXIF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0102",
+   "Tag Name": "BitsPerSample",
+   "Writable": "int16u[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0103",
+   "Tag Name": "Compression",
+   "Writable": "int16u!:",
+   "Group": "IFD0",
+   "Values / Notes": "--> EXIF Compression Values",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0106",
+   "Tag Name": "PhotometricInterpretation",
+   "Writable": "int16u!",
+   "Group": "IFD0",
+   "Values / Notes": "0 = WhiteIsZero   \n1 = BlackIsZero   \n2 = RGB   \n3 = RGB Palette   \n4 = Transparency Mask   \n5 = CMYK   \n6 = YCbCr   \n8 = CIELab   \n9 = ICCLab   \n10 = ITULab   \n32803 = Color Filter Array   \n32844 = Pixar LogL   \n32845 = Pixar LogLuv   \n32892 = Sequential Color Filter   \n34892 = Linear Raw",
+   "FIELD6": "0 = WhiteIsZero   \n1 = BlackIsZero   \n2 = RGB   \n3 = RGB Palette   \n4 = Transparency Mask   \n5 = CMYK   \n6 = YCbCr   \n8 = CIELab   \n9 = ICCLab   \n10 = ITULab   \n32803 = Color Filter Array   \n32844 = Pixar LogL   \n32845 = Pixar LogLuv   \n32892 = Sequential Color Filter   \n34892 = Linear Raw",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0 = WhiteIsZero   \n1 = BlackIsZero   \n2 = RGB   \n3 = RGB Palette   \n4 = Transparency Mask   \n5 = CMYK   \n6 = YCbCr   \n8 = CIELab   \n9 = ICCLab   \n10 = ITULab   \n32803 = Color Filter Array   \n32844 = Pixar LogL   \n32845 = Pixar LogLuv   \n32892 = Sequential Color Filter   \n34892 = Linear Raw",
+   "Tag Name": "",
+   "Writable": "",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0107",
+   "Tag Name": "Thresholding",
+   "Writable": "int16u!",
+   "Group": "IFD0",
+   "Values / Notes": "1 = No dithering or halftoning   \n2 = Ordered dither or halftone   \n3 = Randomized dither",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0108",
+   "Tag Name": "CellWidth",
+   "Writable": "int16u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0109",
+   "Tag Name": "CellLength",
+   "Writable": "int16u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x010a",
+   "Tag Name": "FillOrder",
+   "Writable": "int16u!",
+   "Group": "IFD0",
+   "Values / Notes": "1 = Normal   \n2 = Reversed",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x010d",
+   "Tag Name": "DocumentName",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x010e",
+   "Tag Name": "ImageDescription",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x010f",
+   "Tag Name": "Make",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0110",
+   "Tag Name": "Model",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0111",
+   "Tag Name": "StripOffsets   \nPreviewImageStart   \nPreviewImageStart   \nJpgFromRawStart",
+   "Writable": "no\nint32u*\nint32u*\nint32u*",
+   "Group": "-\nIFD0\nAll\nSubIFD2",
+   "Values / Notes": "(called StripOffsets in most locations, but it is PreviewImageStart in IFD0 of CR2 images and various IFD's of DNG images except for SubIFD2 where it is JpgFromRawStart)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0112",
+   "Tag Name": "Orientation",
+   "Writable": "int16u",
+   "Group": "IFD0",
+   "Values / Notes": "1 = Horizontal (normal)   \n2 = Mirror horizontal   \n3 = Rotate 180   \n4 = Mirror vertical   \n5 = Mirror horizontal and rotate 270 CW   \n6 = Rotate 90 CW   \n7 = Mirror horizontal and rotate 90 CW   \n8 = Rotate 270 CW",
+   "FIELD6": "1 = Horizontal (normal)   \n2 = Mirror horizontal   \n3 = Rotate 180   \n4 = Mirror vertical   \n5 = Mirror horizontal and rotate 270 CW   \n6 = Rotate 90 CW   \n7 = Mirror horizontal and rotate 90 CW   \n8 = Rotate 270 CW",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "1 = Horizontal (normal)   \n2 = Mirror horizontal   \n3 = Rotate 180   \n4 = Mirror vertical   \n5 = Mirror horizontal and rotate 270 CW   \n6 = Rotate 90 CW   \n7 = Mirror horizontal and rotate 90 CW   \n8 = Rotate 270 CW",
+   "Tag Name": "",
+   "Writable": "",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0115",
+   "Tag Name": "SamplesPerPixel",
+   "Writable": "int16u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0116",
+   "Tag Name": "RowsPerStrip",
+   "Writable": "int32u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0117",
+   "Tag Name": "StripByteCounts   \nPreviewImageLength   \nPreviewImageLength   \nJpgFromRawLength",
+   "Writable": "no\nint32u*\nint32u*\nint32u*",
+   "Group": "-\nIFD0\nAll\nSubIFD2",
+   "Values / Notes": "(called StripByteCounts in most locations, but it is PreviewImageLength in IFD0 of CR2 images and various IFD's of DNG images except for SubIFD2 where it is JpgFromRawLength)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0118",
+   "Tag Name": "MinSampleValue",
+   "Writable": "int16u",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0119",
+   "Tag Name": "MaxSampleValue",
+   "Writable": "int16u",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x011a",
+   "Tag Name": "XResolution",
+   "Writable": "rational64u:",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x011b",
+   "Tag Name": "YResolution",
+   "Writable": "rational64u:",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x011c",
+   "Tag Name": "PlanarConfiguration",
+   "Writable": "int16u!",
+   "Group": "IFD0",
+   "Values / Notes": "1 = Chunky   \n2 = Planar",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x011d",
+   "Tag Name": "PageName",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x011e",
+   "Tag Name": "XPosition",
+   "Writable": "rational64u",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x011f",
+   "Tag Name": "YPosition",
+   "Writable": "rational64u",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0120",
+   "Tag Name": "FreeOffsets",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0121",
+   "Tag Name": "FreeByteCounts",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0122",
+   "Tag Name": "GrayResponseUnit",
+   "Writable": "int16u",
+   "Group": "IFD0",
+   "Values / Notes": "1 = 0.1   \n2 = 0.001   \n3 = 0.0001   \n4 = 1e-05   \n5 = 1e-06",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0123",
+   "Tag Name": "GrayResponseCurve",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0124",
+   "Tag Name": "T4Options",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "Bit 0 = 2-Dimensional encoding   \nBit 1 = Uncompressed   \nBit 2 = Fill bits added",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0125",
+   "Tag Name": "T6Options",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "Bit 1 = Uncompressed",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0128",
+   "Tag Name": "ResolutionUnit",
+   "Writable": "int16u:",
+   "Group": "IFD0",
+   "Values / Notes": "(the value 1 is not standard EXIF)   \n1 = None   \n2 = inches   \n3 = cm",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0129",
+   "Tag Name": "PageNumber",
+   "Writable": "int16u[2]",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x012c",
+   "Tag Name": "ColorResponseUnit",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x012d",
+   "Tag Name": "TransferFunction",
+   "Writable": "int16u[768]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0131",
+   "Tag Name": "Software",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0132",
+   "Tag Name": "ModifyDate",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "(called DateTime by the EXIF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x013b",
+   "Tag Name": "Artist",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "(becomes a list-type tag when the MWG module is loaded)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x013c",
+   "Tag Name": "HostComputer",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x013d",
+   "Tag Name": "Predictor",
+   "Writable": "int16u!",
+   "Group": "IFD0",
+   "Values / Notes": "1 = None   \n2 = Horizontal differencing",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x013e",
+   "Tag Name": "WhitePoint",
+   "Writable": "rational64u[2]",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x013f",
+   "Tag Name": "PrimaryChromaticities",
+   "Writable": "rational64u[6]",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0140",
+   "Tag Name": "ColorMap",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0141",
+   "Tag Name": "HalftoneHints",
+   "Writable": "int16u[2]",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0142",
+   "Tag Name": "TileWidth",
+   "Writable": "int32u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0143",
+   "Tag Name": "TileLength",
+   "Writable": "int32u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0144",
+   "Tag Name": "TileOffsets",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0145",
+   "Tag Name": "TileByteCounts",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0146",
+   "Tag Name": "BadFaxLines",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0147",
+   "Tag Name": "CleanFaxData",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Clean   \n1 = Regenerated   \n2 = Unclean",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0148",
+   "Tag Name": "ConsecutiveBadFaxLines",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x014a",
+   "Tag Name": "SubIFD   \nA100DataOffset",
+   "Writable": "-\nno",
+   "Group": "-\nIFD0",
+   "Values / Notes": "--> EXIF Tags   \n(the data offset in original Sony DSLR-A100 ARW images)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x014c",
+   "Tag Name": "InkSet",
+   "Writable": "int16u",
+   "Group": "IFD0",
+   "Values / Notes": "1 = CMYK   \n2 = Not CMYK",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x014d",
+   "Tag Name": "InkNames",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x014e",
+   "Tag Name": "NumberofInks",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0150",
+   "Tag Name": "DotRange",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0151",
+   "Tag Name": "TargetPrinter",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0152",
+   "Tag Name": "ExtraSamples",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Unspecified   \n1 = Associated Alpha   \n2 = Unassociated Alpha",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0153",
+   "Tag Name": "SampleFormat",
+   "Writable": "no",
+   "Group": "SubIFD",
+   "Values / Notes": "(SamplesPerPixel values)   \n[Values 0-3]   1 = Unsigned   \n2 = Signed   \n3 = Float     4 = Undefined   \n5 = Complex int   \n6 = Complex float",
+   "FIELD6": "1 = Unsigned   \n2 = Signed   \n3 = Float",
+   "FIELD7": "",
+   "FIELD8": "4 = Undefined   \n5 = Complex int   \n6 = Complex float"
+ },
+ {
+   "Tag ID": "1 = Unsigned   \n2 = Signed   \n3 = Float",
+   "Tag Name": "",
+   "Writable": "4 = Undefined   \n5 = Complex int   \n6 = Complex float",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0154",
+   "Tag Name": "SMinSampleValue",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0155",
+   "Tag Name": "SMaxSampleValue",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0156",
+   "Tag Name": "TransferRange",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0157",
+   "Tag Name": "ClipPath",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0158",
+   "Tag Name": "XClipPathUnits",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0159",
+   "Tag Name": "YClipPathUnits",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x015a",
+   "Tag Name": "Indexed",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Not indexed   \n1 = Indexed",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x015b",
+   "Tag Name": "JPEGTables",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x015f",
+   "Tag Name": "OPIProxy",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Higher resolution image does not exist   \n1 = Higher resolution image exists",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0190",
+   "Tag Name": "GlobalParametersIFD",
+   "Writable": "-",
+   "Group": "-",
+   "Values / Notes": "--> EXIF Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0191",
+   "Tag Name": "ProfileType",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Unspecified   \n1 = Group 3 FAX",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0192",
+   "Tag Name": "FaxProfile",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Unknown   \n1 = Minimal B&W lossless, S   \n2 = Extended B&W lossless, F   \n3 = Lossless JBIG B&W, J   \n4 = Lossy color and grayscale, C   \n5 = Lossless color and grayscale, L   \n6 = Mixed raster content, M   \n7 = Profile T   \n255 = Multi Profiles",
+   "FIELD6": "0 = Unknown   \n1 = Minimal B&W lossless, S   \n2 = Extended B&W lossless, F   \n3 = Lossless JBIG B&W, J   \n4 = Lossy color and grayscale, C   \n5 = Lossless color and grayscale, L   \n6 = Mixed raster content, M   \n7 = Profile T   \n255 = Multi Profiles",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0 = Unknown   \n1 = Minimal B&W lossless, S   \n2 = Extended B&W lossless, F   \n3 = Lossless JBIG B&W, J   \n4 = Lossy color and grayscale, C   \n5 = Lossless color and grayscale, L   \n6 = Mixed raster content, M   \n7 = Profile T   \n255 = Multi Profiles",
+   "Tag Name": "",
+   "Writable": "",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0193",
+   "Tag Name": "CodingMethods",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "Bit 0 = Unspecified compression   \nBit 1 = Modified Huffman   \nBit 2 = Modified Read   \nBit 3 = Modified MR   \nBit 4 = JBIG   \nBit 5 = Baseline JPEG   \nBit 6 = JBIG color",
+   "FIELD6": "Bit 0 = Unspecified compression   \nBit 1 = Modified Huffman   \nBit 2 = Modified Read   \nBit 3 = Modified MR   \nBit 4 = JBIG   \nBit 5 = Baseline JPEG   \nBit 6 = JBIG color",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "Bit 0 = Unspecified compression   \nBit 1 = Modified Huffman   \nBit 2 = Modified Read   \nBit 3 = Modified MR   \nBit 4 = JBIG   \nBit 5 = Baseline JPEG   \nBit 6 = JBIG color",
+   "Tag Name": "",
+   "Writable": "",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0194",
+   "Tag Name": "VersionYear",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0195",
+   "Tag Name": "ModeNumber",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x01b1",
+   "Tag Name": "Decode",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x01b2",
+   "Tag Name": "DefaultImageColor",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x01b3",
+   "Tag Name": "T82Options",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x01b5",
+   "Tag Name": "JPEGTables",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0200",
+   "Tag Name": "JPEGProc",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "1 = Baseline   \n14 = Lossless",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0201",
+   "Tag Name": "ThumbnailOffset   \nThumbnailOffset   \nThumbnailOffset   \nPreviewImageStart   \nPreviewImageStart   \nJpgFromRawStart   \nJpgFromRawStart   \nOtherImageStart   \nOtherImageStart   \nOtherImageStart",
+   "Writable": "int32u*\nint32u*\nint32u*\nint32u*\nint32u*\nint32u*\nint32u*\nint32u*\nint32u*\nno",
+   "Group": "IFD1\nIFD0\nSubIFD\nMakerNotes\nIFD0\nSubIFD\nIFD2\nSubIFD1\nSubIFD2\n-",
+   "Values / Notes": "(ThumbnailOffset in IFD1 of JPEG and some TIFF-based images, IFD0 of MRW images and AVI and MOV videos, and the SubIFD in IFD1 of SRW images; PreviewImageStart in MakerNotes and IFD0 of ARW and SR2 images; JpgFromRawStart in SubIFD of NEF images and IFD2 of PEF images; and OtherImageStart in everything else)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0202",
+   "Tag Name": "ThumbnailLength   \nThumbnailLength   \nThumbnailLength   \nPreviewImageLength   \nPreviewImageLength   \nJpgFromRawLength   \nJpgFromRawLength   \nOtherImageLength   \nOtherImageLength   \nOtherImageLength",
+   "Writable": "int32u*\nint32u*\nint32u*\nint32u*\nint32u*\nint32u*\nint32u*\nint32u*\nint32u*\nno",
+   "Group": "IFD1\nIFD0\nSubIFD\nMakerNotes\nIFD0\nSubIFD\nIFD2\nSubIFD1\nSubIFD2\n-",
+   "Values / Notes": "(ThumbnailLength in IFD1 of JPEG and some TIFF-based images, IFD0 of MRW images and AVI and MOV videos, and the SubIFD in IFD1 of SRW images; PreviewImageLength in MakerNotes and IFD0 of ARW and SR2 images; JpgFromRawLength in SubIFD of NEF images, and IFD2 of PEF images; and OtherImageLength in everything else)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0203",
+   "Tag Name": "JPEGRestartInterval",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0205",
+   "Tag Name": "JPEGLosslessPredictors",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0206",
+   "Tag Name": "JPEGPointTransforms",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0207",
+   "Tag Name": "JPEGQTables",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0208",
+   "Tag Name": "JPEGDCTables",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0209",
+   "Tag Name": "JPEGACTables",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0211",
+   "Tag Name": "YCbCrCoefficients",
+   "Writable": "rational64u[3]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0212",
+   "Tag Name": "YCbCrSubSampling",
+   "Writable": "int16u[2]!",
+   "Group": "IFD0",
+   "Values / Notes": "'1 1' = YCbCr4:4:4 (1 1)   \n'1 2' = YCbCr4:4:0 (1 2)   \n'1 4' = YCbCr4:4:1 (1 4)   \n'2 1' = YCbCr4:2:2 (2 1)     '2 2' = YCbCr4:2:0 (2 2)   \n'2 4' = YCbCr4:2:1 (2 4)   \n'4 1' = YCbCr4:1:1 (4 1)   \n'4 2' = YCbCr4:1:0 (4 2)",
+   "FIELD6": "'1 1' = YCbCr4:4:4 (1 1)   \n'1 2' = YCbCr4:4:0 (1 2)   \n'1 4' = YCbCr4:4:1 (1 4)   \n'2 1' = YCbCr4:2:2 (2 1)",
+   "FIELD7": "",
+   "FIELD8": "'2 2' = YCbCr4:2:0 (2 2)   \n'2 4' = YCbCr4:2:1 (2 4)   \n'4 1' = YCbCr4:1:1 (4 1)   \n'4 2' = YCbCr4:1:0 (4 2)"
+ },
+ {
+   "Tag ID": "'1 1' = YCbCr4:4:4 (1 1)   \n'1 2' = YCbCr4:4:0 (1 2)   \n'1 4' = YCbCr4:4:1 (1 4)   \n'2 1' = YCbCr4:2:2 (2 1)",
+   "Tag Name": "",
+   "Writable": "'2 2' = YCbCr4:2:0 (2 2)   \n'2 4' = YCbCr4:2:1 (2 4)   \n'4 1' = YCbCr4:1:1 (4 1)   \n'4 2' = YCbCr4:1:0 (4 2)",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0213",
+   "Tag Name": "YCbCrPositioning",
+   "Writable": "int16u!:",
+   "Group": "IFD0",
+   "Values / Notes": "1 = Centered   \n2 = Co-sited",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x0214",
+   "Tag Name": "ReferenceBlackWhite",
+   "Writable": "rational64u[6]",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x022f",
+   "Tag Name": "StripRowCounts",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x02bc",
+   "Tag Name": "ApplicationNotes",
+   "Writable": "int8u!",
+   "Group": "IFD0",
+   "Values / Notes": "--> XMP Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x03e7",
+   "Tag Name": "USPTOMiscellaneous",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x1000",
+   "Tag Name": "RelatedImageFileFormat",
+   "Writable": "string!",
+   "Group": "InteropIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x1001",
+   "Tag Name": "RelatedImageWidth",
+   "Writable": "int16u!",
+   "Group": "InteropIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x1002",
+   "Tag Name": "RelatedImageHeight",
+   "Writable": "int16u!",
+   "Group": "InteropIFD",
+   "Values / Notes": "(called RelatedImageLength by the DCF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x4746",
+   "Tag Name": "Rating",
+   "Writable": "int16u/",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x4747",
+   "Tag Name": "XP_DIP_XML",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x4748",
+   "Tag Name": "StitchInfo",
+   "Writable": "-",
+   "Group": "-",
+   "Values / Notes": "--> Microsoft Stitch Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x4749",
+   "Tag Name": "RatingPercent",
+   "Writable": "int16u/",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x7000",
+   "Tag Name": "SonyRawFileType",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Sony Uncompressed 14-bit RAW   \n1 = Sony Uncompressed 12-bit RAW   \n2 = Sony Compressed RAW   \n3 = Sony Lossless Compressed RAW",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x7010",
+   "Tag Name": "SonyToneCurve",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x7031",
+   "Tag Name": "VignettingCorrection",
+   "Writable": "int16s!",
+   "Group": "SubIFD",
+   "Values / Notes": "(found in Sony ARW images)   \n256 = Off   \n257 = Auto   \n511 = No correction params available",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x7032",
+   "Tag Name": "VignettingCorrParams",
+   "Writable": "int16s[17]!",
+   "Group": "SubIFD",
+   "Values / Notes": "(found in Sony ARW images)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x7034",
+   "Tag Name": "ChromaticAberrationCorrection",
+   "Writable": "int16s!",
+   "Group": "SubIFD",
+   "Values / Notes": "(found in Sony ARW images)   \n0 = Off   \n1 = Auto   \n255 = No correction params available",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x7035",
+   "Tag Name": "ChromaticAberrationCorrParams",
+   "Writable": "int16s[33]!",
+   "Group": "SubIFD",
+   "Values / Notes": "(found in Sony ARW images)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x7036",
+   "Tag Name": "DistortionCorrection",
+   "Writable": "int16s!",
+   "Group": "SubIFD",
+   "Values / Notes": "(found in Sony ARW images)   \n0 = Off   \n1 = Auto   \n17 = Auto fixed by lens   \n255 = No correction params available",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x7037",
+   "Tag Name": "DistortionCorrParams",
+   "Writable": "int16s[17]!",
+   "Group": "SubIFD",
+   "Values / Notes": "(found in Sony ARW images)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x74c7",
+   "Tag Name": "SonyCropTopLeft",
+   "Writable": "int32u[2]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x74c8",
+   "Tag Name": "SonyCropSize",
+   "Writable": "int32u[2]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x800d",
+   "Tag Name": "ImageID",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x80a3",
+   "Tag Name": "WangTag1",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x80a4",
+   "Tag Name": "WangAnnotation",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x80a5",
+   "Tag Name": "WangTag3",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x80a6",
+   "Tag Name": "WangTag4",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x80b9",
+   "Tag Name": "ImageReferencePoints",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x80ba",
+   "Tag Name": "RegionXformTackPoint",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x80bb",
+   "Tag Name": "WarpQuadrilateral",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x80bc",
+   "Tag Name": "AffineTransformMat",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x80e3",
+   "Tag Name": "Matteing",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x80e4",
+   "Tag Name": "DataType",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x80e5",
+   "Tag Name": "ImageDepth",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x80e6",
+   "Tag Name": "TileDepth",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8214",
+   "Tag Name": "ImageFullWidth",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8215",
+   "Tag Name": "ImageFullHeight",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8216",
+   "Tag Name": "TextureFormat",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8217",
+   "Tag Name": "WrapModes",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8218",
+   "Tag Name": "FovCot",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8219",
+   "Tag Name": "MatrixWorldToScreen",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x821a",
+   "Tag Name": "MatrixWorldToCamera",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x827d",
+   "Tag Name": "Model2",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x828d",
+   "Tag Name": "CFARepeatPatternDim",
+   "Writable": "int16u[2]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x828e",
+   "Tag Name": "CFAPattern2",
+   "Writable": "int8u[n]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x828f",
+   "Tag Name": "BatteryLevel",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8290",
+   "Tag Name": "KodakIFD",
+   "Writable": "-",
+   "Group": "-",
+   "Values / Notes": "--> Kodak IFD Tags   \n(used in various types of Kodak images)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8298",
+   "Tag Name": "Copyright",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "(may contain copyright notices for photographer and editor, separated by a newline.  As per the EXIF specification, the newline is replaced by a null byte when writing to file, but this may be avoided by disabling the print conversion)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x829a",
+   "Tag Name": "ExposureTime",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x829d",
+   "Tag Name": "FNumber",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x82a5",
+   "Tag Name": "MDFileTag",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "(tags 0x82a5-0x82ac are used in Molecular Dynamics GEL files)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x82a6",
+   "Tag Name": "MDScalePixel",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x82a7",
+   "Tag Name": "MDColorTable",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x82a8",
+   "Tag Name": "MDLabName",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x82a9",
+   "Tag Name": "MDSampleInfo",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x82aa",
+   "Tag Name": "MDPrepDate",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x82ab",
+   "Tag Name": "MDPrepTime",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x82ac",
+   "Tag Name": "MDFileUnits",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x830e",
+   "Tag Name": "PixelScale",
+   "Writable": "double[3]",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8335",
+   "Tag Name": "AdventScale",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8336",
+   "Tag Name": "AdventRevision",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x835c",
+   "Tag Name": "UIC1Tag",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x835d",
+   "Tag Name": "UIC2Tag",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x835e",
+   "Tag Name": "UIC3Tag",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x835f",
+   "Tag Name": "UIC4Tag",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x83bb",
+   "Tag Name": "IPTC-NAA",
+   "Writable": "int32u!",
+   "Group": "IFD0",
+   "Values / Notes": "--> IPTC Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x847e",
+   "Tag Name": "IntergraphPacketData",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x847f",
+   "Tag Name": "IntergraphFlagRegisters",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8480",
+   "Tag Name": "IntergraphMatrix",
+   "Writable": "double[n]",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8481",
+   "Tag Name": "INGRReserved",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8482",
+   "Tag Name": "ModelTiePoint",
+   "Writable": "double[n]",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84e0",
+   "Tag Name": "Site",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84e1",
+   "Tag Name": "ColorSequence",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84e2",
+   "Tag Name": "IT8Header",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84e3",
+   "Tag Name": "RasterPadding",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Byte   \n1 = Word   \n2 = Long Word   \n9 = Sector   \n10 = Long Sector",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84e4",
+   "Tag Name": "BitsPerRunLength",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84e5",
+   "Tag Name": "BitsPerExtendedRunLength",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84e6",
+   "Tag Name": "ColorTable",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84e7",
+   "Tag Name": "ImageColorIndicator",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Unspecified Image Color   \n1 = Specified Image Color",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84e8",
+   "Tag Name": "BackgroundColorIndicator",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Unspecified Background Color   \n1 = Specified Background Color",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84e9",
+   "Tag Name": "ImageColorValue",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84ea",
+   "Tag Name": "BackgroundColorValue",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84eb",
+   "Tag Name": "PixelIntensityRange",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84ec",
+   "Tag Name": "TransparencyIndicator",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84ed",
+   "Tag Name": "ColorCharacterization",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84ee",
+   "Tag Name": "HCUsage",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = CT   \n1 = Line Art   \n2 = Trap",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84ef",
+   "Tag Name": "TrapIndicator",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x84f0",
+   "Tag Name": "CMYKEquivalent",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8546",
+   "Tag Name": "SEMInfo",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "(found in some scanning electron microscope images)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8568",
+   "Tag Name": "AFCP_IPTC",
+   "Writable": "-",
+   "Group": "-",
+   "Values / Notes": "--> IPTC Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x85b8",
+   "Tag Name": "PixelMagicJBIGOptions",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x85d7",
+   "Tag Name": "JPLCartoIFD",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x85d8",
+   "Tag Name": "ModelTransform",
+   "Writable": "double[16]",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8602",
+   "Tag Name": "WB_GRGBLevels",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "(found in IFD0 of Leaf MOS images)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8606",
+   "Tag Name": "LeafData",
+   "Writable": "-",
+   "Group": "-",
+   "Values / Notes": "--> Leaf Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8649",
+   "Tag Name": "PhotoshopSettings",
+   "Writable": "-",
+   "Group": "IFD0",
+   "Values / Notes": "--> Photoshop Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8769",
+   "Tag Name": "ExifOffset",
+   "Writable": "-",
+   "Group": "IFD0",
+   "Values / Notes": "--> EXIF Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8773",
+   "Tag Name": "ICC_Profile",
+   "Writable": "-",
+   "Group": "IFD0",
+   "Values / Notes": "--> ICC_Profile Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x877f",
+   "Tag Name": "TIFF_FXExtensions",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "Bit 0 = Resolution/Image Width   \nBit 1 = N Layer Profile M   \nBit 2 = Shared Data   \nBit 3 = B&W JBIG2   \nBit 4 = JBIG2 Profile M",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8780",
+   "Tag Name": "MultiProfiles",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "Bit 0 = Profile S   \nBit 1 = Profile F   \nBit 2 = Profile J   \nBit 3 = Profile C   \nBit 4 = Profile L   \nBit 5 = Profile M   \nBit 6 = Profile T   \nBit 7 = Resolution/Image Width   \nBit 8 = N Layer Profile M   \nBit 9 = Shared Data   \nBit 10 = JBIG2 Profile M",
+   "FIELD6": "Bit 0 = Profile S   \nBit 1 = Profile F   \nBit 2 = Profile J   \nBit 3 = Profile C   \nBit 4 = Profile L   \nBit 5 = Profile M   \nBit 6 = Profile T   \nBit 7 = Resolution/Image Width   \nBit 8 = N Layer Profile M   \nBit 9 = Shared Data   \nBit 10 = JBIG2 Profile M",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "Bit 0 = Profile S   \nBit 1 = Profile F   \nBit 2 = Profile J   \nBit 3 = Profile C   \nBit 4 = Profile L   \nBit 5 = Profile M   \nBit 6 = Profile T   \nBit 7 = Resolution/Image Width   \nBit 8 = N Layer Profile M   \nBit 9 = Shared Data   \nBit 10 = JBIG2 Profile M",
+   "Tag Name": "",
+   "Writable": "",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8781",
+   "Tag Name": "SharedData",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8782",
+   "Tag Name": "T88Options",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x87ac",
+   "Tag Name": "ImageLayer",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x87af",
+   "Tag Name": "GeoTiffDirectory",
+   "Writable": "undef",
+   "Group": "IFD0",
+   "Values / Notes": "(these \"GeoTiff\" tags may read and written as a block, but they aren't extracted unless specifically requested.  Byte order changes are handled automatically when copying between TIFF images with different byte order)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x87b0",
+   "Tag Name": "GeoTiffDoubleParams",
+   "Writable": "undef",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x87b1",
+   "Tag Name": "GeoTiffAsciiParams",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x87be",
+   "Tag Name": "JBIGOptions",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8822",
+   "Tag Name": "ExposureProgram",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "(the value of 9 is not standard EXIF, but is used by the Canon EOS 7D)   0 = Not Defined   \n1 = Manual   \n2 = Program AE   \n3 = Aperture-priority AE   \n4 = Shutter speed priority AE   \n5 = Creative (Slow speed)   \n6 = Action (High speed)   \n7 = Portrait   \n8 = Landscape   \n9 = Bulb",
+   "FIELD6": "0 = Not Defined   \n1 = Manual   \n2 = Program AE   \n3 = Aperture-priority AE   \n4 = Shutter speed priority AE   \n5 = Creative (Slow speed)   \n6 = Action (High speed)   \n7 = Portrait   \n8 = Landscape   \n9 = Bulb",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0 = Not Defined   \n1 = Manual   \n2 = Program AE   \n3 = Aperture-priority AE   \n4 = Shutter speed priority AE   \n5 = Creative (Slow speed)   \n6 = Action (High speed)   \n7 = Portrait   \n8 = Landscape   \n9 = Bulb",
+   "Tag Name": "",
+   "Writable": "",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8824",
+   "Tag Name": "SpectralSensitivity",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8825",
+   "Tag Name": "GPSInfo",
+   "Writable": "-",
+   "Group": "IFD0",
+   "Values / Notes": "--> GPS Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8827",
+   "Tag Name": "ISO",
+   "Writable": "int16u[n]",
+   "Group": "ExifIFD",
+   "Values / Notes": "(called ISOSpeedRatings by EXIF 2.2, then PhotographicSensitivity by the EXIF 2.3 spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8828",
+   "Tag Name": "Opto-ElectricConvFactor",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "(called OECF by the EXIF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8829",
+   "Tag Name": "Interlace",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x882a",
+   "Tag Name": "TimeZoneOffset",
+   "Writable": "int16s[n]",
+   "Group": "ExifIFD",
+   "Values / Notes": "(1 or 2 values: 1. The time zone offset of DateTimeOriginal from GMT in hours, 2. If present, the time zone offset of ModifyDate)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x882b",
+   "Tag Name": "SelfTimerMode",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8830",
+   "Tag Name": "SensitivityType",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "(applies to EXIF:ISO tag)   \n0 = Unknown   \n1 = Standard Output Sensitivity   \n2 = Recommended Exposure Index   \n3 = ISO Speed   \n4 = Standard Output Sensitivity and Recommended Exposure Index   \n5 = Standard Output Sensitivity and ISO Speed   \n6 = Recommended Exposure Index and ISO Speed   \n7 = Standard Output Sensitivity, Recommended Exposure Index and ISO Speed",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8831",
+   "Tag Name": "StandardOutputSensitivity",
+   "Writable": "int32u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8832",
+   "Tag Name": "RecommendedExposureIndex",
+   "Writable": "int32u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8833",
+   "Tag Name": "ISOSpeed",
+   "Writable": "int32u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8834",
+   "Tag Name": "ISOSpeedLatitudeyyy",
+   "Writable": "int32u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8835",
+   "Tag Name": "ISOSpeedLatitudezzz",
+   "Writable": "int32u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x885c",
+   "Tag Name": "FaxRecvParams",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x885d",
+   "Tag Name": "FaxSubAddress",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x885e",
+   "Tag Name": "FaxRecvTime",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x8871",
+   "Tag Name": "FedexEDR",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x888a",
+   "Tag Name": "LeafSubIFD",
+   "Writable": "-",
+   "Group": "-",
+   "Values / Notes": "--> Leaf SubIFD Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9000",
+   "Tag Name": "ExifVersion",
+   "Writable": "undef:",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9003",
+   "Tag Name": "DateTimeOriginal",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "(date/time when original image was taken)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9004",
+   "Tag Name": "CreateDate",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "(called DateTimeDigitized by the EXIF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9009",
+   "Tag Name": "GooglePlusUploadCode",
+   "Writable": "undef[n]",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9010",
+   "Tag Name": "OffsetTime",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "(time zone for ModifyDate)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9011",
+   "Tag Name": "OffsetTimeOriginal",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "(time zone for DateTimeOriginal)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9012",
+   "Tag Name": "OffsetTimeDigitized",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "(time zone for CreateDate)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9101",
+   "Tag Name": "ComponentsConfiguration",
+   "Writable": "undef[4]!:",
+   "Group": "ExifIFD",
+   "Values / Notes": "0 = -   \n1 = Y   \n2 = Cb   \n3 = Cr     4 = R   \n5 = G   \n6 = B",
+   "FIELD6": "0 = -   \n1 = Y   \n2 = Cb   \n3 = Cr",
+   "FIELD7": "",
+   "FIELD8": "4 = R   \n5 = G   \n6 = B"
+ },
+ {
+   "Tag ID": "0 = -   \n1 = Y   \n2 = Cb   \n3 = Cr",
+   "Tag Name": "",
+   "Writable": "4 = R   \n5 = G   \n6 = B",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9102",
+   "Tag Name": "CompressedBitsPerPixel",
+   "Writable": "rational64u!",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9201",
+   "Tag Name": "ShutterSpeedValue",
+   "Writable": "rational64s",
+   "Group": "ExifIFD",
+   "Values / Notes": "(displayed in seconds, but stored as an APEX value)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9202",
+   "Tag Name": "ApertureValue",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "(displayed as an F number, but stored as an APEX value)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9203",
+   "Tag Name": "BrightnessValue",
+   "Writable": "rational64s",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9204",
+   "Tag Name": "ExposureCompensation",
+   "Writable": "rational64s",
+   "Group": "ExifIFD",
+   "Values / Notes": "(called ExposureBiasValue by the EXIF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9205",
+   "Tag Name": "MaxApertureValue",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "(displayed as an F number, but stored as an APEX value)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9206",
+   "Tag Name": "SubjectDistance",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9207",
+   "Tag Name": "MeteringMode",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "0 = Unknown   \n1 = Average   \n2 = Center-weighted average   \n3 = Spot   \n4 = Multi-spot   \n5 = Multi-segment   \n6 = Partial   \n255 = Other",
+   "FIELD6": "0 = Unknown   \n1 = Average   \n2 = Center-weighted average   \n3 = Spot   \n4 = Multi-spot   \n5 = Multi-segment   \n6 = Partial   \n255 = Other",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0 = Unknown   \n1 = Average   \n2 = Center-weighted average   \n3 = Spot   \n4 = Multi-spot   \n5 = Multi-segment   \n6 = Partial   \n255 = Other",
+   "Tag Name": "",
+   "Writable": "",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9208",
+   "Tag Name": "LightSource",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "--> EXIF LightSource Values",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9209",
+   "Tag Name": "Flash",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "--> EXIF Flash Values",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x920a",
+   "Tag Name": "FocalLength",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x920b",
+   "Tag Name": "FlashEnergy",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x920c",
+   "Tag Name": "SpatialFrequencyResponse",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x920d",
+   "Tag Name": "Noise",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x920e",
+   "Tag Name": "FocalPlaneXResolution",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x920f",
+   "Tag Name": "FocalPlaneYResolution",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9210",
+   "Tag Name": "FocalPlaneResolutionUnit",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "1 = None   \n2 = inches   \n3 = cm   \n4 = mm   \n5 = um",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9211",
+   "Tag Name": "ImageNumber",
+   "Writable": "int32u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9212",
+   "Tag Name": "SecurityClassification",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "'C' = Confidential   \n'R' = Restricted   \n'S' = Secret   \n'T' = Top Secret   \n'U' = Unclassified",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9213",
+   "Tag Name": "ImageHistory",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9214",
+   "Tag Name": "SubjectArea",
+   "Writable": "int16u[n]",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9215",
+   "Tag Name": "ExposureIndex",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9216",
+   "Tag Name": "TIFF-EPStandardID",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9217",
+   "Tag Name": "SensingMethod",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "1 = Monochrome area   \n2 = One-chip color area   \n3 = Two-chip color area   \n4 = Three-chip color area   \n5 = Color sequential area   \n6 = Monochrome linear   \n7 = Trilinear   \n8 = Color sequential linear",
+   "FIELD6": "1 = Monochrome area   \n2 = One-chip color area   \n3 = Two-chip color area   \n4 = Three-chip color area   \n5 = Color sequential area   \n6 = Monochrome linear   \n7 = Trilinear   \n8 = Color sequential linear",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "1 = Monochrome area   \n2 = One-chip color area   \n3 = Two-chip color area   \n4 = Three-chip color area   \n5 = Color sequential area   \n6 = Monochrome linear   \n7 = Trilinear   \n8 = Color sequential linear",
+   "Tag Name": "",
+   "Writable": "",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x923a",
+   "Tag Name": "CIP3DataFile",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x923b",
+   "Tag Name": "CIP3Sheet",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x923c",
+   "Tag Name": "CIP3Side",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x923f",
+   "Tag Name": "StoNits",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x927c",
+   "Tag Name": "MakerNoteApple   \nMakerNoteNikon   \nMakerNoteCanon   \nMakerNoteCasio   \nMakerNoteCasio2   \nMakerNoteDJI   \nMakerNoteFLIR   \nMakerNoteFujiFilm   \nMakerNoteGE   \nMakerNoteGE2   \nMakerNoteHasselblad   \nMakerNoteHP   \nMakerNoteHP2   \nMakerNoteHP4   \nMakerNoteHP6   \nMakerNoteISL   \nMakerNoteJVC   \nMakerNoteJVCText   \nMakerNoteKodak1a   \nMakerNoteKodak1b   \nMakerNoteKodak2   \nMakerNoteKodak3   \nMakerNoteKodak4   \nMakerNoteKodak5   \nMakerNoteKodak6a   \nMakerNoteKodak6b   \nMakerNoteKodak7   \nMakerNoteKodak8a   \nMakerNoteKodak8b   \nMakerNoteKodak8c   \nMakerNoteKodak9   \nMakerNoteKodak10   \nMakerNoteKodak11   \nMakerNoteKodak12   \nMakerNoteKodakUnknown   \nMakerNoteKyocera   \nMakerNoteMinolta   \nMakerNoteMinolta2   \nMakerNoteMinolta3   \nMakerNoteMotorola   \nMakerNoteNikon2   \nMakerNoteNikon3   \nMakerNoteNintendo   \nMakerNoteOlympus   \nMakerNoteOlympus2   \nMakerNoteLeica   \nMakerNoteLeica2   \nMakerNoteLeica3   \nMakerNoteLeica4   \nMakerNoteLeica5   \nMakerNoteLeica6   \nMakerNoteLeica7   \nMakerNoteLeica8   \nMakerNoteLeica9   \nMakerNoteLeica10   \nMakerNotePanasonic   \nMakerNotePanasonic2   \nMakerNotePanasonic3   \nMakerNotePentax   \nMakerNotePentax2   \nMakerNotePentax3   \nMakerNotePentax4   \nMakerNotePentax5   \nMakerNotePentax6   \nMakerNotePhaseOne   \nMakerNoteReconyx   \nMakerNoteReconyx2   \nMakerNoteReconyx3   \nMakerNoteRicohPentax   \nMakerNoteRicoh   \nMakerNoteRicoh2   \nMakerNoteRicohText   \nMakerNoteSamsung1a   \nMakerNoteSamsung1b   \nMakerNoteSamsung2   \nMakerNoteSanyo   \nMakerNoteSanyoC4   \nMakerNoteSanyoPatch   \nMakerNoteSigma   \nMakerNoteSigma3   \nMakerNoteSony   \nMakerNoteSony2   \nMakerNoteSony3   \nMakerNoteSony4   \nMakerNoteSony5   \nMakerNoteSonyEricsson   \nMakerNoteSonySRF   \nMakerNoteUnknownText   \nMakerNoteUnknownBinary   \nMakerNoteUnknown",
+   "Writable": "undef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef\nundef",
+   "Group": "ExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD\nExifIFD",
+   "Values / Notes": "--> Apple Tags   \n--> Nikon Tags   \n--> Canon Tags   \n--> Casio Tags   \n--> Casio Type2 Tags   \n--> DJI Tags   \n--> FLIR Tags   \n--> FujiFilm Tags   \n--> GE Tags   \n--> FujiFilm Tags   \n--> Unknown Tags   \n--> HP Tags   \n--> HP Type2 Tags   \n--> HP Type4 Tags   \n--> HP Type6 Tags   \n--> Unknown Tags   \n--> JVC Tags   \n--> JVC Text Tags   \n--> Kodak Tags   \n--> Kodak Tags   \n--> Kodak Type2 Tags   \n--> Kodak Type3 Tags   \n--> Kodak Type4 Tags   \n--> Kodak Type5 Tags   \n--> Kodak Type6 Tags   \n--> Kodak Type6 Tags   \n--> Kodak Type7 Tags   \n--> Kodak Type8 Tags   \n--> Kodak Type8 Tags   \n--> Kodak Type8 Tags   \n--> Kodak Type9 Tags   \n--> Kodak Type10 Tags   \n--> Kodak Type11 Tags   \n--> Kodak Type11 Tags   \n--> Kodak Unknown Tags   \n--> Unknown Tags   \n--> Minolta Tags   \n--> Olympus Tags   \n(not EXIF-based)   \n--> Motorola Tags   \n--> Nikon Type2 Tags   \n--> Nikon Tags   \n--> Nintendo Tags   \n--> Olympus Tags   \n--> Olympus Tags   \n--> Panasonic Tags   \n--> Panasonic Leica2 Tags   \n--> Panasonic Leica3 Tags   \n--> Panasonic Leica4 Tags   \n--> Panasonic Leica5 Tags   \n--> Panasonic Leica6 Tags   \n--> Panasonic Leica6 Tags   \n--> Panasonic Leica5 Tags   \n--> Panasonic Leica9 Tags   \n--> Panasonic Tags   \n--> Panasonic Tags   \n--> Panasonic Type2 Tags   \n--> Panasonic Tags   \n--> Pentax Tags   \n--> Pentax Type2 Tags   \n--> Casio Type2 Tags   \n--> Pentax Type4 Tags   \n--> Pentax Tags   \n--> Pentax S1 Tags   \n--> PhaseOne Tags   \n--> Reconyx Tags   \n--> Reconyx Type2 Tags   \n--> Reconyx Type3 Tags   \n--> Pentax Tags   \n--> Ricoh Tags   \n--> Ricoh Type2 Tags   \n--> Ricoh Text Tags   \n(Samsung \"STMN\" maker notes without PreviewImage)   \n--> Samsung Tags   \n--> Samsung Type2 Tags   \n--> Sanyo Tags   \n--> Sanyo Tags   \n--> Sanyo Tags   \n--> Sigma Tags   \n--> Sigma Tags   \n--> Sony Tags   \n--> Olympus Tags   \n--> Olympus Tags   \n--> Sony PIC Tags   \n--> Sony Tags   \n--> Sony Ericsson Tags   \n--> Sony SRF Tags   \n(unknown text-based maker notes)   \n(unknown binary maker notes)   \n--> Unknown Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9286",
+   "Tag Name": "UserComment",
+   "Writable": "undef",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9290",
+   "Tag Name": "SubSecTime",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "(fractional seconds for ModifyDate)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9291",
+   "Tag Name": "SubSecTimeOriginal",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "(fractional seconds for DateTimeOriginal)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9292",
+   "Tag Name": "SubSecTimeDigitized",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "(fractional seconds for CreateDate)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x932f",
+   "Tag Name": "MSDocumentText",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9330",
+   "Tag Name": "MSPropertySetStorage",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9331",
+   "Tag Name": "MSDocumentTextPosition",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x935c",
+   "Tag Name": "ImageSourceData",
+   "Writable": "undef!",
+   "Group": "IFD0",
+   "Values / Notes": "--> Photoshop DocumentData Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9400",
+   "Tag Name": "AmbientTemperature",
+   "Writable": "rational64s",
+   "Group": "ExifIFD",
+   "Values / Notes": "(ambient temperature in degrees C, called Temperature by the EXIF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9401",
+   "Tag Name": "Humidity",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "(ambient relative humidity in percent)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9402",
+   "Tag Name": "Pressure",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "(air pressure in hPa or mbar)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9403",
+   "Tag Name": "WaterDepth",
+   "Writable": "rational64s",
+   "Group": "ExifIFD",
+   "Values / Notes": "(depth under water in metres, negative for above water)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9404",
+   "Tag Name": "Acceleration",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "(directionless camera acceleration in units of mGal, or 10-5 m/s2)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9405",
+   "Tag Name": "CameraElevationAngle",
+   "Writable": "rational64s",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9c9b",
+   "Tag Name": "XPTitle",
+   "Writable": "int8u",
+   "Group": "IFD0",
+   "Values / Notes": "(tags 0x9c9b-0x9c9f are used by Windows Explorer; special characters in these values are converted to UTF-8 by default, or Windows Latin1 with the -L option.  XPTitle is ignored by Windows Explorer if ImageDescription exists)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9c9c",
+   "Tag Name": "XPComment",
+   "Writable": "int8u",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9c9d",
+   "Tag Name": "XPAuthor",
+   "Writable": "int8u",
+   "Group": "IFD0",
+   "Values / Notes": "(ignored by Windows Explorer if Artist exists)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9c9e",
+   "Tag Name": "XPKeywords",
+   "Writable": "int8u",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x9c9f",
+   "Tag Name": "XPSubject",
+   "Writable": "int8u",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa000",
+   "Tag Name": "FlashpixVersion",
+   "Writable": "undef:",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa001",
+   "Tag Name": "ColorSpace",
+   "Writable": "int16u:",
+   "Group": "ExifIFD",
+   "Values / Notes": "(the value of 0x2 is not standard EXIF.  Instead, an Adobe RGB image is indicated by \"Uncalibrated\" with an InteropIndex of \"R03\".  The values 0xfffd and 0xfffe are also non-standard, and are used by some Sony cameras)   \n0x1 = sRGB   \n0x2 = Adobe RGB   \n0xfffd = Wide Gamut RGB   \n0xfffe = ICC Profile   \n0xffff = Uncalibrated",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa002",
+   "Tag Name": "ExifImageWidth",
+   "Writable": "int16u:",
+   "Group": "ExifIFD",
+   "Values / Notes": "(called PixelXDimension by the EXIF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa003",
+   "Tag Name": "ExifImageHeight",
+   "Writable": "int16u:",
+   "Group": "ExifIFD",
+   "Values / Notes": "(called PixelYDimension by the EXIF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa004",
+   "Tag Name": "RelatedSoundFile",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa005",
+   "Tag Name": "InteropOffset",
+   "Writable": "-",
+   "Group": "-",
+   "Values / Notes": "--> EXIF Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa010",
+   "Tag Name": "SamsungRawPointersOffset",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa011",
+   "Tag Name": "SamsungRawPointersLength",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa101",
+   "Tag Name": "SamsungRawByteOrder",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa102",
+   "Tag Name": "SamsungRawUnknown?",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa20b",
+   "Tag Name": "FlashEnergy",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa20c",
+   "Tag Name": "SpatialFrequencyResponse",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa20d",
+   "Tag Name": "Noise",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa20e",
+   "Tag Name": "FocalPlaneXResolution",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa20f",
+   "Tag Name": "FocalPlaneYResolution",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa210",
+   "Tag Name": "FocalPlaneResolutionUnit",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "(values 1, 4 and 5 are not standard EXIF)   \n1 = None   \n2 = inches   \n3 = cm   \n4 = mm   \n5 = um",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa211",
+   "Tag Name": "ImageNumber",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa212",
+   "Tag Name": "SecurityClassification",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa213",
+   "Tag Name": "ImageHistory",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa214",
+   "Tag Name": "SubjectLocation",
+   "Writable": "int16u[2]",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa215",
+   "Tag Name": "ExposureIndex",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa216",
+   "Tag Name": "TIFF-EPStandardID",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa217",
+   "Tag Name": "SensingMethod",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "1 = Not defined   \n2 = One-chip color area   \n3 = Two-chip color area   \n4 = Three-chip color area   \n5 = Color sequential area   \n7 = Trilinear   \n8 = Color sequential linear",
+   "FIELD6": "1 = Not defined   \n2 = One-chip color area   \n3 = Two-chip color area   \n4 = Three-chip color area   \n5 = Color sequential area   \n7 = Trilinear   \n8 = Color sequential linear",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "1 = Not defined   \n2 = One-chip color area   \n3 = Two-chip color area   \n4 = Three-chip color area   \n5 = Color sequential area   \n7 = Trilinear   \n8 = Color sequential linear",
+   "Tag Name": "",
+   "Writable": "",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa300",
+   "Tag Name": "FileSource",
+   "Writable": "undef",
+   "Group": "ExifIFD",
+   "Values / Notes": "1 = Film Scanner   \n2 = Reflection Print Scanner   \n3 = Digital Camera   \n\"\\x03\\x00\\x00\\x00\" = Sigma Digital Camera",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa301",
+   "Tag Name": "SceneType",
+   "Writable": "undef",
+   "Group": "ExifIFD",
+   "Values / Notes": "1 = Directly photographed",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa302",
+   "Tag Name": "CFAPattern",
+   "Writable": "undef",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa401",
+   "Tag Name": "CustomRendered",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "(only 0 and 1 are standard EXIF, but other values are used by Apple iOS devices)   \n0 = Normal   \n1 = Custom   \n3 = HDR   \n6 = Panorama   \n8 = Portrait",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa402",
+   "Tag Name": "ExposureMode",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "0 = Auto   \n1 = Manual   \n2 = Auto bracket",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa403",
+   "Tag Name": "WhiteBalance",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "0 = Auto   \n1 = Manual",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa404",
+   "Tag Name": "DigitalZoomRatio",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa405",
+   "Tag Name": "FocalLengthIn35mmFormat",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "(called FocalLengthIn35mmFilm by the EXIF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa406",
+   "Tag Name": "SceneCaptureType",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "(the value of 4 is non-standard, and used by some Samsung models)   \n0 = Standard   \n1 = Landscape   \n2 = Portrait   \n3 = Night   \n4 = Other",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa407",
+   "Tag Name": "GainControl",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "0 = None   \n1 = Low gain up   \n2 = High gain up   \n3 = Low gain down   \n4 = High gain down",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa408",
+   "Tag Name": "Contrast",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "0 = Normal   \n1 = Low   \n2 = High",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa409",
+   "Tag Name": "Saturation",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "0 = Normal   \n1 = Low   \n2 = High",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa40a",
+   "Tag Name": "Sharpness",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "0 = Normal   \n1 = Soft   \n2 = Hard",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa40b",
+   "Tag Name": "DeviceSettingDescription",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa40c",
+   "Tag Name": "SubjectDistanceRange",
+   "Writable": "int16u",
+   "Group": "ExifIFD",
+   "Values / Notes": "0 = Unknown   \n1 = Macro   \n2 = Close   \n3 = Distant",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa420",
+   "Tag Name": "ImageUniqueID",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa430",
+   "Tag Name": "OwnerName",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "(called CameraOwnerName by the EXIF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa431",
+   "Tag Name": "SerialNumber",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "(called BodySerialNumber by the EXIF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa432",
+   "Tag Name": "LensInfo",
+   "Writable": "rational64u[4]",
+   "Group": "ExifIFD",
+   "Values / Notes": "(4 rational values giving focal and aperture ranges, called LensSpecification by the EXIF spec.)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa433",
+   "Tag Name": "LensMake",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa434",
+   "Tag Name": "LensModel",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa435",
+   "Tag Name": "LensSerialNumber",
+   "Writable": "string",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa480",
+   "Tag Name": "GDALMetadata",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa481",
+   "Tag Name": "GDALNoData",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xa500",
+   "Tag Name": "Gamma",
+   "Writable": "rational64u",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xafc0",
+   "Tag Name": "ExpandSoftware",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xafc1",
+   "Tag Name": "ExpandLens",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xafc2",
+   "Tag Name": "ExpandFilm",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xafc3",
+   "Tag Name": "ExpandFilterLens",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xafc4",
+   "Tag Name": "ExpandScanner",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xafc5",
+   "Tag Name": "ExpandFlashLamp",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbc01",
+   "Tag Name": "PixelFormat",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "(tags 0xbc** are used in Windows HD Photo (HDP and WDP) images. The actual PixelFormat values are 16-byte GUID's but the leading 15 bytes, '6fddc324-4e03-4bfe-b1853-d77768dc9', have been removed below to avoid unnecessary clutter)   0x5 = Black & White   \n0x8 = 8-bit Gray   \n0x9 = 16-bit BGR555   \n0xa = 16-bit BGR565   \n0xb = 16-bit Gray   \n0xc = 24-bit BGR   \n0xd = 24-bit RGB   \n0xe = 32-bit BGR   \n0xf = 32-bit BGRA   \n0x10 = 32-bit PBGRA   \n0x11 = 32-bit Gray Float   \n0x12 = 48-bit RGB Fixed Point   \n0x13 = 32-bit BGR101010   \n0x15 = 48-bit RGB   \n0x16 = 64-bit RGBA   \n0x17 = 64-bit PRGBA   \n0x18 = 96-bit RGB Fixed Point   \n0x19 = 128-bit RGBA Float   \n0x1a = 128-bit PRGBA Float   \n0x1b = 128-bit RGB Float   \n0x1c = 32-bit CMYK   \n0x1d = 64-bit RGBA Fixed Point   \n0x1e = 128-bit RGBA Fixed Point   \n0x1f = 64-bit CMYK   \n0x20 = 24-bit 3 Channels   \n0x21 = 32-bit 4 Channels   \n0x22 = 40-bit 5 Channels   \n0x23 = 48-bit 6 Channels   \n0x24 = 56-bit 7 Channels   \n0x25 = 64-bit 8 Channels   \n0x26 = 48-bit 3 Channels   \n0x27 = 64-bit 4 Channels   \n0x28 = 80-bit 5 Channels   \n0x29 = 96-bit 6 Channels   \n0x2a = 112-bit 7 Channels   \n0x2b = 128-bit 8 Channels   \n0x2c = 40-bit CMYK Alpha   \n0x2d = 80-bit CMYK Alpha   \n0x2e = 32-bit 3 Channels Alpha   \n0x2f = 40-bit 4 Channels Alpha   \n0x30 = 48-bit 5 Channels Alpha   \n0x31 = 56-bit 6 Channels Alpha   \n0x32 = 64-bit 7 Channels Alpha   \n0x33 = 72-bit 8 Channels Alpha   \n0x34 = 64-bit 3 Channels Alpha   \n0x35 = 80-bit 4 Channels Alpha   \n0x36 = 96-bit 5 Channels Alpha   \n0x37 = 112-bit 6 Channels Alpha   \n0x38 = 128-bit 7 Channels Alpha   \n0x39 = 144-bit 8 Channels Alpha   \n0x3a = 64-bit RGBA Half   \n0x3b = 48-bit RGB Half   \n0x3d = 32-bit RGBE   \n0x3e = 16-bit Gray Half   \n0x3f = 32-bit Gray Fixed Point",
+   "FIELD6": "0x5 = Black & White   \n0x8 = 8-bit Gray   \n0x9 = 16-bit BGR555   \n0xa = 16-bit BGR565   \n0xb = 16-bit Gray   \n0xc = 24-bit BGR   \n0xd = 24-bit RGB   \n0xe = 32-bit BGR   \n0xf = 32-bit BGRA   \n0x10 = 32-bit PBGRA   \n0x11 = 32-bit Gray Float   \n0x12 = 48-bit RGB Fixed Point   \n0x13 = 32-bit BGR101010   \n0x15 = 48-bit RGB   \n0x16 = 64-bit RGBA   \n0x17 = 64-bit PRGBA   \n0x18 = 96-bit RGB Fixed Point   \n0x19 = 128-bit RGBA Float   \n0x1a = 128-bit PRGBA Float   \n0x1b = 128-bit RGB Float   \n0x1c = 32-bit CMYK   \n0x1d = 64-bit RGBA Fixed Point   \n0x1e = 128-bit RGBA Fixed Point   \n0x1f = 64-bit CMYK   \n0x20 = 24-bit 3 Channels   \n0x21 = 32-bit 4 Channels   \n0x22 = 40-bit 5 Channels   \n0x23 = 48-bit 6 Channels   \n0x24 = 56-bit 7 Channels   \n0x25 = 64-bit 8 Channels   \n0x26 = 48-bit 3 Channels   \n0x27 = 64-bit 4 Channels   \n0x28 = 80-bit 5 Channels   \n0x29 = 96-bit 6 Channels   \n0x2a = 112-bit 7 Channels   \n0x2b = 128-bit 8 Channels   \n0x2c = 40-bit CMYK Alpha   \n0x2d = 80-bit CMYK Alpha   \n0x2e = 32-bit 3 Channels Alpha   \n0x2f = 40-bit 4 Channels Alpha   \n0x30 = 48-bit 5 Channels Alpha   \n0x31 = 56-bit 6 Channels Alpha   \n0x32 = 64-bit 7 Channels Alpha   \n0x33 = 72-bit 8 Channels Alpha   \n0x34 = 64-bit 3 Channels Alpha   \n0x35 = 80-bit 4 Channels Alpha   \n0x36 = 96-bit 5 Channels Alpha   \n0x37 = 112-bit 6 Channels Alpha   \n0x38 = 128-bit 7 Channels Alpha   \n0x39 = 144-bit 8 Channels Alpha   \n0x3a = 64-bit RGBA Half   \n0x3b = 48-bit RGB Half   \n0x3d = 32-bit RGBE   \n0x3e = 16-bit Gray Half   \n0x3f = 32-bit Gray Fixed Point",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0x5 = Black & White   \n0x8 = 8-bit Gray   \n0x9 = 16-bit BGR555   \n0xa = 16-bit BGR565   \n0xb = 16-bit Gray   \n0xc = 24-bit BGR   \n0xd = 24-bit RGB   \n0xe = 32-bit BGR   \n0xf = 32-bit BGRA   \n0x10 = 32-bit PBGRA   \n0x11 = 32-bit Gray Float   \n0x12 = 48-bit RGB Fixed Point   \n0x13 = 32-bit BGR101010   \n0x15 = 48-bit RGB   \n0x16 = 64-bit RGBA   \n0x17 = 64-bit PRGBA   \n0x18 = 96-bit RGB Fixed Point   \n0x19 = 128-bit RGBA Float   \n0x1a = 128-bit PRGBA Float   \n0x1b = 128-bit RGB Float   \n0x1c = 32-bit CMYK   \n0x1d = 64-bit RGBA Fixed Point   \n0x1e = 128-bit RGBA Fixed Point   \n0x1f = 64-bit CMYK   \n0x20 = 24-bit 3 Channels   \n0x21 = 32-bit 4 Channels   \n0x22 = 40-bit 5 Channels   \n0x23 = 48-bit 6 Channels   \n0x24 = 56-bit 7 Channels   \n0x25 = 64-bit 8 Channels   \n0x26 = 48-bit 3 Channels   \n0x27 = 64-bit 4 Channels   \n0x28 = 80-bit 5 Channels   \n0x29 = 96-bit 6 Channels   \n0x2a = 112-bit 7 Channels   \n0x2b = 128-bit 8 Channels   \n0x2c = 40-bit CMYK Alpha   \n0x2d = 80-bit CMYK Alpha   \n0x2e = 32-bit 3 Channels Alpha   \n0x2f = 40-bit 4 Channels Alpha   \n0x30 = 48-bit 5 Channels Alpha   \n0x31 = 56-bit 6 Channels Alpha   \n0x32 = 64-bit 7 Channels Alpha   \n0x33 = 72-bit 8 Channels Alpha   \n0x34 = 64-bit 3 Channels Alpha   \n0x35 = 80-bit 4 Channels Alpha   \n0x36 = 96-bit 5 Channels Alpha   \n0x37 = 112-bit 6 Channels Alpha   \n0x38 = 128-bit 7 Channels Alpha   \n0x39 = 144-bit 8 Channels Alpha   \n0x3a = 64-bit RGBA Half   \n0x3b = 48-bit RGB Half   \n0x3d = 32-bit RGBE   \n0x3e = 16-bit Gray Half   \n0x3f = 32-bit Gray Fixed Point",
+   "Tag Name": "",
+   "Writable": "",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbc02",
+   "Tag Name": "Transformation",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Horizontal (normal)   \n1 = Mirror vertical   \n2 = Mirror horizontal   \n3 = Rotate 180   \n4 = Rotate 90 CW   \n5 = Mirror horizontal and rotate 90 CW   \n6 = Mirror horizontal and rotate 270 CW   \n7 = Rotate 270 CW",
+   "FIELD6": "0 = Horizontal (normal)   \n1 = Mirror vertical   \n2 = Mirror horizontal   \n3 = Rotate 180   \n4 = Rotate 90 CW   \n5 = Mirror horizontal and rotate 90 CW   \n6 = Mirror horizontal and rotate 270 CW   \n7 = Rotate 270 CW",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0 = Horizontal (normal)   \n1 = Mirror vertical   \n2 = Mirror horizontal   \n3 = Rotate 180   \n4 = Rotate 90 CW   \n5 = Mirror horizontal and rotate 90 CW   \n6 = Mirror horizontal and rotate 270 CW   \n7 = Rotate 270 CW",
+   "Tag Name": "",
+   "Writable": "",
+   "Group": "",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbc03",
+   "Tag Name": "Uncompressed",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = No   \n1 = Yes",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbc04",
+   "Tag Name": "ImageType",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "Bit 0 = Preview   \nBit 1 = Page",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbc80",
+   "Tag Name": "ImageWidth",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbc81",
+   "Tag Name": "ImageHeight",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbc82",
+   "Tag Name": "WidthResolution",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbc83",
+   "Tag Name": "HeightResolution",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbcc0",
+   "Tag Name": "ImageOffset",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbcc1",
+   "Tag Name": "ImageByteCount",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbcc2",
+   "Tag Name": "AlphaOffset",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbcc3",
+   "Tag Name": "AlphaByteCount",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbcc4",
+   "Tag Name": "ImageDataDiscard",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Full Resolution   \n1 = Flexbits Discarded   \n2 = HighPass Frequency Data Discarded   \n3 = Highpass and LowPass Frequency Data Discarded",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xbcc5",
+   "Tag Name": "AlphaDataDiscard",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Full Resolution   \n1 = Flexbits Discarded   \n2 = HighPass Frequency Data Discarded   \n3 = Highpass and LowPass Frequency Data Discarded",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc427",
+   "Tag Name": "OceScanjobDesc",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc428",
+   "Tag Name": "OceApplicationSelector",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc429",
+   "Tag Name": "OceIDNumber",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc42a",
+   "Tag Name": "OceImageLogic",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc44f",
+   "Tag Name": "Annotations",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc4a5",
+   "Tag Name": "PrintIM",
+   "Writable": "undef",
+   "Group": "IFD0",
+   "Values / Notes": "--> PrintIM Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc573",
+   "Tag Name": "OriginalFileName",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "(used by some obscure software)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc580",
+   "Tag Name": "USPTOOriginalContentType",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "0 = Text or Drawing   \n1 = Grayscale   \n2 = Color",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc5e0",
+   "Tag Name": "CR2CFAPattern",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "1 => '0 1 1 2' = [Red,Green][Green,Blue]   \n4 => '1 0 2 1' = [Green,Red][Blue,Green]   \n3 => '1 2 0 1' = [Green,Blue][Red,Green]   \n2 => '2 1 1 0' = [Blue,Green][Green,Red]",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc612",
+   "Tag Name": "DNGVersion",
+   "Writable": "int8u[4]!",
+   "Group": "IFD0",
+   "Values / Notes": "(tags 0xc612-0xc7b5 are defined by the DNG specification unless otherwise noted.  See https://helpx.adobe.com/photoshop/digital-negative.html for the specification)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc613",
+   "Tag Name": "DNGBackwardVersion",
+   "Writable": "int8u[4]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc614",
+   "Tag Name": "UniqueCameraModel",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc615",
+   "Tag Name": "LocalizedCameraModel",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc616",
+   "Tag Name": "CFAPlaneColor",
+   "Writable": "no",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc617",
+   "Tag Name": "CFALayout",
+   "Writable": "no",
+   "Group": "SubIFD",
+   "Values / Notes": "1 = Rectangular   \n2 = Even columns offset down 1/2 row   \n3 = Even columns offset up 1/2 row   \n4 = Even rows offset right 1/2 column   \n5 = Even rows offset left 1/2 column   \n6 = Even rows offset up by 1/2 row, even columns offset left by 1/2 column   \n7 = Even rows offset up by 1/2 row, even columns offset right by 1/2 column   \n8 = Even rows offset down by 1/2 row, even columns offset left by 1/2 column   \n9 = Even rows offset down by 1/2 row, even columns offset right by 1/2 column",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc618",
+   "Tag Name": "LinearizationTable",
+   "Writable": "int16u[n]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc619",
+   "Tag Name": "BlackLevelRepeatDim",
+   "Writable": "int16u[2]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc61a",
+   "Tag Name": "BlackLevel",
+   "Writable": "rational64u[n]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc61b",
+   "Tag Name": "BlackLevelDeltaH",
+   "Writable": "rational64s[n]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc61c",
+   "Tag Name": "BlackLevelDeltaV",
+   "Writable": "rational64s[n]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc61d",
+   "Tag Name": "WhiteLevel",
+   "Writable": "int32u[n]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc61e",
+   "Tag Name": "DefaultScale",
+   "Writable": "rational64u[2]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc61f",
+   "Tag Name": "DefaultCropOrigin",
+   "Writable": "int32u[2]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc620",
+   "Tag Name": "DefaultCropSize",
+   "Writable": "int32u[2]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc621",
+   "Tag Name": "ColorMatrix1",
+   "Writable": "rational64s[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc622",
+   "Tag Name": "ColorMatrix2",
+   "Writable": "rational64s[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc623",
+   "Tag Name": "CameraCalibration1",
+   "Writable": "rational64s[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc624",
+   "Tag Name": "CameraCalibration2",
+   "Writable": "rational64s[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc625",
+   "Tag Name": "ReductionMatrix1",
+   "Writable": "rational64s[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc626",
+   "Tag Name": "ReductionMatrix2",
+   "Writable": "rational64s[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc627",
+   "Tag Name": "AnalogBalance",
+   "Writable": "rational64u[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc628",
+   "Tag Name": "AsShotNeutral",
+   "Writable": "rational64u[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc629",
+   "Tag Name": "AsShotWhiteXY",
+   "Writable": "rational64u[2]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc62a",
+   "Tag Name": "BaselineExposure",
+   "Writable": "rational64s!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc62b",
+   "Tag Name": "BaselineNoise",
+   "Writable": "rational64u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc62c",
+   "Tag Name": "BaselineSharpness",
+   "Writable": "rational64u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc62d",
+   "Tag Name": "BayerGreenSplit",
+   "Writable": "int32u!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc62e",
+   "Tag Name": "LinearResponseLimit",
+   "Writable": "rational64u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc62f",
+   "Tag Name": "CameraSerialNumber",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc630",
+   "Tag Name": "DNGLensInfo",
+   "Writable": "rational64u[4]",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc631",
+   "Tag Name": "ChromaBlurRadius",
+   "Writable": "rational64u!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc632",
+   "Tag Name": "AntiAliasStrength",
+   "Writable": "rational64u!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc633",
+   "Tag Name": "ShadowScale",
+   "Writable": "rational64u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc634",
+   "Tag Name": "SR2Private   \nDNGAdobeData   \nMakerNotePentax   \nMakerNotePentax5   \nMakerNoteRicohPentax   \nDNGPrivateData",
+   "Writable": "-\nundef!\n-\n-\n-\nint8u!",
+   "Group": "IFD0\nIFD0\nIFD0\nIFD0\nIFD0\nIFD0",
+   "Values / Notes": "--> Sony SR2Private Tags   \n--> DNG AdobeData Tags   \n--> Pentax Tags   \n--> Pentax Tags   \n--> Pentax Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc635",
+   "Tag Name": "MakerNoteSafety",
+   "Writable": "int16u",
+   "Group": "IFD0",
+   "Values / Notes": "0 = Unsafe   \n1 = Safe",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc640",
+   "Tag Name": "RawImageSegmentation",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "(used in segmented Canon CR2 images.  3 numbers: 1. Number of segments minus one; 2. Pixel width of segments except last; 3. Pixel width of last segment)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc65a",
+   "Tag Name": "CalibrationIlluminant1",
+   "Writable": "int16u!",
+   "Group": "IFD0",
+   "Values / Notes": "--> EXIF LightSource Values",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc65b",
+   "Tag Name": "CalibrationIlluminant2",
+   "Writable": "int16u!",
+   "Group": "IFD0",
+   "Values / Notes": "--> EXIF LightSource Values",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc65c",
+   "Tag Name": "BestQualityScale",
+   "Writable": "rational64u!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc65d",
+   "Tag Name": "RawDataUniqueID",
+   "Writable": "int8u[16]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc660",
+   "Tag Name": "AliasLayerMetadata",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "(used by Alias Sketchbook Pro)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc68b",
+   "Tag Name": "OriginalRawFileName",
+   "Writable": "string!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc68c",
+   "Tag Name": "OriginalRawFileData",
+   "Writable": "undef!",
+   "Group": "IFD0",
+   "Values / Notes": "--> DNG OriginalRaw Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc68d",
+   "Tag Name": "ActiveArea",
+   "Writable": "int32u[4]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc68e",
+   "Tag Name": "MaskedAreas",
+   "Writable": "int32u[n]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc68f",
+   "Tag Name": "AsShotICCProfile",
+   "Writable": "undef!",
+   "Group": "IFD0",
+   "Values / Notes": "--> ICC_Profile Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc690",
+   "Tag Name": "AsShotPreProfileMatrix",
+   "Writable": "rational64s[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc691",
+   "Tag Name": "CurrentICCProfile",
+   "Writable": "undef!",
+   "Group": "IFD0",
+   "Values / Notes": "--> ICC_Profile Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc692",
+   "Tag Name": "CurrentPreProfileMatrix",
+   "Writable": "rational64s[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6bf",
+   "Tag Name": "ColorimetricReference",
+   "Writable": "int16u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6c5",
+   "Tag Name": "SRawType",
+   "Writable": "no",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6d2",
+   "Tag Name": "PanasonicTitle",
+   "Writable": "undef",
+   "Group": "IFD0",
+   "Values / Notes": "(proprietary Panasonic tag used for baby/pet name, etc)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6d3",
+   "Tag Name": "PanasonicTitle2",
+   "Writable": "undef",
+   "Group": "IFD0",
+   "Values / Notes": "(proprietary Panasonic tag used for baby/pet name with age)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6f3",
+   "Tag Name": "CameraCalibrationSig",
+   "Writable": "string!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6f4",
+   "Tag Name": "ProfileCalibrationSig",
+   "Writable": "string!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6f5",
+   "Tag Name": "ProfileIFD",
+   "Writable": "-",
+   "Group": "IFD0",
+   "Values / Notes": "--> EXIF Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6f6",
+   "Tag Name": "AsShotProfileName",
+   "Writable": "string!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6f7",
+   "Tag Name": "NoiseReductionApplied",
+   "Writable": "rational64u!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6f8",
+   "Tag Name": "ProfileName",
+   "Writable": "string!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6f9",
+   "Tag Name": "ProfileHueSatMapDims",
+   "Writable": "int32u[3]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6fa",
+   "Tag Name": "ProfileHueSatMapData1",
+   "Writable": "float[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6fb",
+   "Tag Name": "ProfileHueSatMapData2",
+   "Writable": "float[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6fc",
+   "Tag Name": "ProfileToneCurve",
+   "Writable": "float[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6fd",
+   "Tag Name": "ProfileEmbedPolicy",
+   "Writable": "int32u!",
+   "Group": "IFD0",
+   "Values / Notes": "0 = Allow Copying   \n1 = Embed if Used   \n2 = Never Embed   \n3 = No Restrictions",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc6fe",
+   "Tag Name": "ProfileCopyright",
+   "Writable": "string!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc714",
+   "Tag Name": "ForwardMatrix1",
+   "Writable": "rational64s[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc715",
+   "Tag Name": "ForwardMatrix2",
+   "Writable": "rational64s[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc716",
+   "Tag Name": "PreviewApplicationName",
+   "Writable": "string!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc717",
+   "Tag Name": "PreviewApplicationVersion",
+   "Writable": "string!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc718",
+   "Tag Name": "PreviewSettingsName",
+   "Writable": "string!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc719",
+   "Tag Name": "PreviewSettingsDigest",
+   "Writable": "int8u!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc71a",
+   "Tag Name": "PreviewColorSpace",
+   "Writable": "int32u!",
+   "Group": "IFD0",
+   "Values / Notes": "0 = Unknown   \n1 = Gray Gamma 2.2   \n2 = sRGB   \n3 = Adobe RGB   \n4 = ProPhoto RGB",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc71b",
+   "Tag Name": "PreviewDateTime",
+   "Writable": "string!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc71c",
+   "Tag Name": "RawImageDigest",
+   "Writable": "int8u[16]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc71d",
+   "Tag Name": "OriginalRawFileDigest",
+   "Writable": "int8u[16]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc71e",
+   "Tag Name": "SubTileBlockSize",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc71f",
+   "Tag Name": "RowInterleaveFactor",
+   "Writable": "no",
+   "Group": "-",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc725",
+   "Tag Name": "ProfileLookTableDims",
+   "Writable": "int32u[3]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc726",
+   "Tag Name": "ProfileLookTableData",
+   "Writable": "float[n]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc740",
+   "Tag Name": "OpcodeList1",
+   "Writable": "undef!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc741",
+   "Tag Name": "OpcodeList2",
+   "Writable": "undef!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc74e",
+   "Tag Name": "OpcodeList3",
+   "Writable": "undef!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc761",
+   "Tag Name": "NoiseProfile",
+   "Writable": "double[n]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc763",
+   "Tag Name": "TimeCodes",
+   "Writable": "int8u[n]",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc764",
+   "Tag Name": "FrameRate",
+   "Writable": "rational64s",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc772",
+   "Tag Name": "TStop",
+   "Writable": "rational64u[n]",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc789",
+   "Tag Name": "ReelName",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc791",
+   "Tag Name": "OriginalDefaultFinalSize",
+   "Writable": "int32u[2]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc792",
+   "Tag Name": "OriginalBestQualitySize",
+   "Writable": "int32u[2]!",
+   "Group": "IFD0",
+   "Values / Notes": "(called OriginalBestQualityFinalSize by the DNG spec)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc793",
+   "Tag Name": "OriginalDefaultCropSize",
+   "Writable": "rational64u[2]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc7a1",
+   "Tag Name": "CameraLabel",
+   "Writable": "string",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc7a3",
+   "Tag Name": "ProfileHueSatMapEncoding",
+   "Writable": "int32u!",
+   "Group": "IFD0",
+   "Values / Notes": "0 = Linear   \n1 = sRGB",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc7a4",
+   "Tag Name": "ProfileLookTableEncoding",
+   "Writable": "int32u!",
+   "Group": "IFD0",
+   "Values / Notes": "0 = Linear   \n1 = sRGB",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc7a5",
+   "Tag Name": "BaselineExposureOffset",
+   "Writable": "rational64s!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc7a6",
+   "Tag Name": "DefaultBlackRender",
+   "Writable": "int32u!",
+   "Group": "IFD0",
+   "Values / Notes": "0 = Auto   \n1 = None",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc7a7",
+   "Tag Name": "NewRawImageDigest",
+   "Writable": "int8u[16]!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc7a8",
+   "Tag Name": "RawToPreviewGain",
+   "Writable": "double!",
+   "Group": "IFD0",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc7aa",
+   "Tag Name": "CacheVersion",
+   "Writable": "int32u!",
+   "Group": "SubIFD2",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc7b5",
+   "Tag Name": "DefaultUserCrop",
+   "Writable": "rational64u[4]!",
+   "Group": "SubIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xc7d5",
+   "Tag Name": "NikonNEFInfo",
+   "Writable": "-",
+   "Group": "-",
+   "Values / Notes": "--> Nikon NEFInfo Tags",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xea1c",
+   "Tag Name": "Padding",
+   "Writable": "undef!",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xea1d",
+   "Tag Name": "OffsetSchema",
+   "Writable": "int32s!",
+   "Group": "ExifIFD",
+   "Values / Notes": "(Microsoft's ill-conceived maker note offset difference)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfde8",
+   "Tag Name": "OwnerName",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "(tags 0xfde8-0xfdea and 0xfe4c-0xfe58 are generated by Photoshop Camera RAW. Some names are the same as other EXIF tags, but ExifTool will avoid writing these unless they already exist in the file)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfde9",
+   "Tag Name": "SerialNumber",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfdea",
+   "Tag Name": "Lens",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfe00",
+   "Tag Name": "KDC_IFD",
+   "Writable": "-",
+   "Group": "-",
+   "Values / Notes": "--> Kodak KDC_IFD Tags   \n(used in some Kodak KDC images)",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfe4c",
+   "Tag Name": "RawFile",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfe4d",
+   "Tag Name": "Converter",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfe4e",
+   "Tag Name": "WhiteBalance",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfe51",
+   "Tag Name": "Exposure",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfe52",
+   "Tag Name": "Shadows",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfe53",
+   "Tag Name": "Brightness",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfe54",
+   "Tag Name": "Contrast",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfe55",
+   "Tag Name": "Saturation",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfe56",
+   "Tag Name": "Sharpness",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfe57",
+   "Tag Name": "Smoothness",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "Tag ID": "0xfe58",
+   "Tag Name": "MoireFilter",
+   "Writable": "string/",
+   "Group": "ExifIFD",
+   "Values / Notes": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ }
+]
