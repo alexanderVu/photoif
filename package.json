@@ -1,0 +1,41 @@
+{
+  "name": "photoif",
+  "version": "1.0.0",
+  "description": "Detect informations on photo",
+  "main": "index.js",
+  "scripts": {
+    "exifConvert": "node ./exif/convert.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderVu/photoif.git"
+  },
+  "keywords": [
+    "photo",
+    "image",
+    "information",
+    "data",
+    "date",
+    "location",
+    "person"
+  ],
+  "author": "Alexander Vu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexanderVu/photoif/issues"
+  },
+  "homepage": "https://github.com/alexanderVu/photoif#readme",
+  "dependencies": {
+    "file-type": "^11.0.0",
+    "piexifjs": "^1.0.5"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.8.0"
+  }
+}
